@@ -1,9 +1,0 @@
-{
-    "description": "This is the first simple bag of words model with logistic regression.",
-    "modelVersion": 1,
-    "modifiedAt": 1555339015036,
-    "modifiedBy": "1055",
-    "performanceMetrics": {
-        "accuracy": 0.785
-    }
-}

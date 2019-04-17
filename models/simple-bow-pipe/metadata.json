@@ -2,24 +2,23 @@
     "algorithm": "Pipeline",
     "algorithmType": "Classification",
     "author": "1055",
-    "createdAt": 1555340352285,
+    "createdAt": 1555527381207,
     "features": [
         {
-            "name": "review",
-            "sample": "Don't hate Heather Graham because she's beautiful, hate her because she's fun to watch in this movie. Like the hip clothing and funky surroundings, the actors in this flick work well together. Casey Affleck is hysterical and Heather Graham literally lights up the screen. The minor characters - Goran Visnjic {sigh} and Patricia Velazquez are as TALENTED as they are gorgeous. Congratulations Miramax & Director Lisa Krueger!",
-            "type": "str"
+            "name": "",
+            "type": ""
         }
     ],
-    "id": 1555340352285,
+    "id": 1555527381207,
     "isPublished": false,
     "labelColumns": [
         {
-            "name": "0",
-            "type": "int"
+            "name": "",
+            "type": ""
         }
     ],
-    "latestModelVersion": 3,
-    "learningType": "Supervised",
+    "latestModelVersion": 1,
+    "learningType": "Unsupervised",
     "name": "simple-bow-pipe",
     "params": {},
     "publishedBy": "",
@@ -27,5 +26,5 @@
     "runtime": "Python35",
     "serialization": "joblib",
     "source": "",
-    "type": "scikit-learn-0.20"
+    "type": "scikit-learn-0.19"
 }
