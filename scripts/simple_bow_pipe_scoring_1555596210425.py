@@ -19,7 +19,7 @@ def init():
     global serialization_method
 
     model_name = "simple-bow-pipe"
-    version = "1"
+    version = "3"
     project_name = os.environ.get("DSX_PROJECT_NAME")
     user_id = os.environ.get("DSX_USER_ID", "990")
     project_path = "/user-home/" + user_id + "/DSX_Projects/" + project_name
@@ -52,7 +52,7 @@ def score(args):
     input_json = args.get("input_json")
 
     # convert to pandas dataframe
-    data_frame = pd.DataFrame.from_dict(input_json).review # custom
+    data_frame = pd.DataFrame.from_dict(input_json)
 
     # scoring method
     classes = None
@@ -77,3 +77,10 @@ def test_score(args):
     """Call this method to score in development."""
     init()
     return score(args)
+    
+json_payload = [{
+    "review": "Awesome movie"
+    # "": text_train[3]
+}]
+
+print(test_score(args={'input_json': json_payload}))
