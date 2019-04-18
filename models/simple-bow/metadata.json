@@ -6,7 +6,7 @@
     "features": [
         {
             "name": "review",
-            "sample": "Don't hate Heather Graham because she's beautiful, hate her because she's fun to watch in this movie. Like the hip clothing and funky surroundings, the actors in this flick work well together. Casey Affleck is hysterical and Heather Graham literally lights up the screen. The minor characters - Goran Visnjic {sigh} and Patricia Velazquez are as TALENTED as they are gorgeous. Congratulations Miramax & Director Lisa Krueger!",
+            "sample": "I must say that I wasn't impressed at all, probably because I was expecting much more from this movie. Maybe an accent on religion vs science or on the meaning of life, not just a few lines. So, if you expect something to think about after you see this movie, don't. It's more psychological than philosophical. I vote 4 because of the end, it clears up a bit and because I have a great respect for BBC documentaries. There are a couple of very interesting scenes that actually gave some sense. It was a brilliant idea to add it in a movie related to theory of evolution, too bad that this wasn't the main subject. Ah, I just forgot to say that for more than 1 hour, the movie is quite boring and in a way, cruel.",
             "type": "str"
         }
     ],
@@ -18,7 +18,7 @@
             "type": "int"
         }
     ],
-    "latestModelVersion": 1,
+    "latestModelVersion": 2,
     "learningType": "Supervised",
     "name": "simple-bow",
     "params": {},
