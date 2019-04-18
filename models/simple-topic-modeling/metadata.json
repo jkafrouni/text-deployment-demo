@@ -1,0 +1,30 @@
+{
+    "algorithm": "Pipeline",
+    "algorithmType": "Classification",
+    "author": "1055",
+    "createdAt": 1555621018057,
+    "features": [
+        {
+            "name": "",
+            "type": ""
+        }
+    ],
+    "id": 1555621018057,
+    "isPublished": false,
+    "labelColumns": [
+        {
+            "name": "",
+            "type": ""
+        }
+    ],
+    "latestModelVersion": 1,
+    "learningType": "Unsupervised",
+    "name": "simple-topic-modeling",
+    "params": {},
+    "publishedBy": "",
+    "publishedModelVersion": -1,
+    "runtime": "Python35",
+    "serialization": "joblib",
+    "source": "simple-topic-modeling.ipynb",
+    "type": "scikit-learn-0.19"
+}
