@@ -51,3 +51,24 @@ def visualize_coefficients(coefficients, feature_names, n_top_features=25):
                ha="right")
     plt.ylabel("Coefficient magnitude")
     plt.xlabel("Feature")
+    
+    
+# from https://github.com/amueller/mglearn/blob/cbae37d906261dad173cbc6696dcef69dfd0cbaf/mglearn/tools.py
+def print_topics(topics, feature_names, sorting, topics_per_chunk=6,
+                 n_words=20):
+    for i in range(0, len(topics), topics_per_chunk):
+        # for each chunk:
+        these_topics = topics[i: i + topics_per_chunk]
+        # maybe we have less than topics_per_chunk left
+        len_this_chunk = len(these_topics)
+        # print topic headers
+        print(("topic {:<8}" * len_this_chunk).format(*these_topics))
+        print(("-------- {0:<5}" * len_this_chunk).format(""))
+        # print top n_words frequent words
+        for i in range(n_words):
+            try:
+                print(("{:<14}" * len_this_chunk).format(
+                    *feature_names[sorting[these_topics, i]]))
+            except:
+                pass
+        print("\n")
