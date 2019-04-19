@@ -1,0 +1,21 @@
+[
+  {
+    "args": [],
+    "author": "1055",
+    "dateCreated": 1555686921,
+    "displayName": "simplebow-1555686890372",
+    "env": [],
+    "fileName": "simplebow-model-evaluation-1555686890372.py",
+    "jobId": "1a46834a917e2766",
+    "jobName": "simplebow-1555686890372",
+    "mainScript": [
+      "/opt/conda/bin/python",
+      "scripts/simplebow-model-evaluation-1555686890372.py"
+    ],
+    "remoteOptions": [],
+    "runtimeEnvironment": "dsx-scripted-ml-python3",
+    "scheduleDescription": "On demand",
+    "targetHost": "",
+    "type": "Model evaluation"
+  }
+]

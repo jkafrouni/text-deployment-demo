@@ -1,0 +1,21 @@
+[
+  {
+    "args": [],
+    "author": "1055",
+    "dateCreated": 1555686850,
+    "displayName": "simpletopicmodeling-1555686825935",
+    "env": [],
+    "fileName": "simpletopicmodeling-model-evaluation-1555686825934.py",
+    "jobId": "b08c668199091f62",
+    "jobName": "simpletopicmodeling-1555686825935",
+    "mainScript": [
+      "/opt/conda/bin/python",
+      "scripts/simpletopicmodeling-model-evaluation-1555686825934.py"
+    ],
+    "remoteOptions": [],
+    "runtimeEnvironment": "dsx-scripted-ml-python3",
+    "scheduleDescription": "On demand",
+    "targetHost": "",
+    "type": "Model evaluation"
+  }
+]
