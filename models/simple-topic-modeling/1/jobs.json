@@ -17,5 +17,24 @@
     "scheduleDescription": "On demand",
     "targetHost": "",
     "type": "Model evaluation"
+  },
+  {
+    "args": [],
+    "author": "1055",
+    "dateCreated": 1555689050,
+    "displayName": "simpletopicmodeling-1555689018563",
+    "env": [],
+    "fileName": "simpletopicmodeling-batch-scoring-1555689018563.py",
+    "jobId": "a94a6d8a8d28e8d5",
+    "jobName": "simpletopicmodeling-1555689018563",
+    "mainScript": [
+      "/opt/conda/bin/python",
+      "scripts/simpletopicmodeling-batch-scoring-1555689018563.py"
+    ],
+    "remoteOptions": [],
+    "runtimeEnvironment": "dsx-scripted-ml-python3",
+    "scheduleDescription": "On demand",
+    "targetHost": "",
+    "type": "Batch scoring"
   }
 ]
