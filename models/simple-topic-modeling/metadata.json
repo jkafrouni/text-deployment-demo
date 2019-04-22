@@ -17,7 +17,7 @@
             "type": ""
         }
     ],
-    "latestModelVersion": 1,
+    "latestModelVersion": 2,
     "learningType": "Unsupervised",
     "name": "simple-topic-modeling",
     "params": {},
