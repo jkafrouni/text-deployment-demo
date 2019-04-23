@@ -19,7 +19,7 @@ def init():
     global serialization_method
 
     model_name = "simple-topic-modeling"
-    version = "2"
+    version = "latest"
     project_name = os.environ.get("DSX_PROJECT_NAME")
     user_id = os.environ.get("DSX_USER_ID", "990")
     project_path = "/user-home/" + user_id + "/DSX_Projects/" + project_name
