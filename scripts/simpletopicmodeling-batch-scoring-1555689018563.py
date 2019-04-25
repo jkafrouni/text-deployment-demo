@@ -48,9 +48,8 @@ loaded_model = joblib.load(open(model_path, 'rb'))
 
 # predictions
 scoring_result = loaded_model.transform(dataframe)
-
-# save scoring result to given target
 scoring_df = pd.DataFrame(scoring_result)
+scoring_df.columns = ["topic_" + str(i) for i in range(len(scoring_df.columns))]
 
 # save output to csv
-scoring_df.to_csv(output_data, encoding='utf-8')
+scoring_df.to_csv(output_data, encoding="utf-8", index = False)
