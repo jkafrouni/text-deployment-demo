@@ -23,7 +23,26 @@ dsxr_setup_environment()
 
 # define variables
 args = {"threshold": {"min_value": 0.3, "metric": "accuracyScore", "mid_value": 0.7}, "dataset": "/datasets/test.csv", "livyVersion": "livyspark2", "execution_type": "DSX", "remoteHostImage": "", "published": "false", "remoteHost": ""}
-model_path = os.path.join(os.getenv("DSX_PROJECT_DIR"), "models", os.getenv("DEF_DSX_MODEL_NAME", "simple-bow"), os.getenv("DEF_DSX_MODEL_VERSION", "2"), "model")
+# model_path = os.path.join(os.getenv("DSX_PROJECT_DIR"), "models", os.getenv("DEF_DSX_MODEL_NAME", "simple-bow"), os.getenv("DEF_DSX_MODEL_VERSION", "2"), "model")
+
+# this section was modified to match online scoring scripts style:
+model_name = "simple-bow"
+version = "latest"
+model_parent_path = os.getenv("DSX_PROJECT_DIR") + os.path.join("/models", os.getenv("DSX_MODEL_NAME", model_name))
+metadata_path = os.path.join(model_parent_path, "metadata.json")
+
+# fetch info from metadata.json
+with open(metadata_path) as data_file:
+  meta_data = json.load(data_file)
+
+# if latest version, find latest version from  metadata.json
+if (version == "latest"):
+  version = meta_data.get("latestModelVersion")
+
+# prepare model path using model name and version
+model_path = os.path.join(model_parent_path, str(version), "model")
+
+# the rest of the script is similar to the regular batch scoring template:
 
 # load the input data
 
@@ -77,4 +96,4 @@ elif(eval_fields[eval_fields["thresholdMetric"]] <= threshold.get('min_value', 0
 else:
     eval_fields["performance"] = "fair"
 
-save_evaluation_metrics(eval_fields, "simple-bow", "2", startTime)
+save_evaluation_metrics(eval_fields, "simple-bow", latestModelVersion, startTime)
