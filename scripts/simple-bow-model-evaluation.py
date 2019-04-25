@@ -96,4 +96,4 @@ elif(eval_fields[eval_fields["thresholdMetric"]] <= threshold.get('min_value', 0
 else:
     eval_fields["performance"] = "fair"
 
-save_evaluation_metrics(eval_fields, "simple-bow", latestModelVersion, startTime)
+save_evaluation_metrics(eval_fields, "simple-bow", version, startTime)
